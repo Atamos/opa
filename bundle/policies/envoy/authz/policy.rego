@@ -6,5 +6,4 @@ default allow = false
 
 allow {
   http_request.method == "GET"
-  input.parsed_path = ["get"]
 }
