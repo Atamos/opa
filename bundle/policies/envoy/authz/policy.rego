@@ -6,5 +6,6 @@ default allow = false
 
 allow {
   http_request.method == "GET"
-  some "marcolino" in input.parsed_path
+  ns := "marcolino"
+  some ns in input.parsed_path
 }  
