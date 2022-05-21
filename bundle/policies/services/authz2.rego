@@ -1,4 +1,4 @@
-package policies.services.authz
+package policies.services.authz2
 
 default hello = false
 
