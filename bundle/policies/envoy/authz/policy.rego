@@ -9,6 +9,9 @@ allow {
   "konbawa" != input.parsed_path[0]
 }
 
+allow {
+  http_request.method = "POST"
+}
 
 allow {
   http_request.method == "GET"
