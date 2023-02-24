@@ -10,9 +10,12 @@ allow {
 ## Allowed issuer(s)
 
 is_get {
-	input.method == "GET"
+  input.method == "GET"
 }
 
+is_post {
+   input.method == "POST"
+}
 
 match_claims {
   input.token.payload.scope = "openid read"
